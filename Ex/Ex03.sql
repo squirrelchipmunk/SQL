@@ -56,3 +56,12 @@ select  count(*),
         max(salary), 
         min(salary)
 from employees;
+
+/***********************
+*     group by 절       *
+************************/
+
+select  avg(salary),
+        department_id
+from employees
+group by department_id;
