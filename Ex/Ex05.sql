@@ -2,6 +2,9 @@
 *       j o i n          *
 **************************/
 
+select first_name, salary, department_id
+from employees;
+
 select *
 from employees, departments;
 
@@ -22,3 +25,6 @@ from employees em, departments de, jobs jo
 where em.department_id = de.department_id and 
       em.job_id= jo.job_id
 order by em.first_name;
+
+select *
+from employees, departments, jobs;
