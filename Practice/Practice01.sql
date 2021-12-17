@@ -75,8 +75,7 @@ where department_id in (10, 90, 100);
 
 select first_name, salary
 from employees
-where   first_name like '%S%' or
-        first_name like '%s%';
+where upper(first_name) like '%S%' ;
 
 /*
 문제8.
@@ -95,8 +94,7 @@ order by length(department_name) desc;
 
 select upper(country_name)
 from countries
-where region_id is not null
-order by country_name;
+order by upper(country_name);
 
 /*
 문제10.
